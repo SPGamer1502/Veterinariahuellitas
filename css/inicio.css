@@ -1,0 +1,105 @@
+/* --- SECCIÓN HERO (INICIO) CON TU IMAGEN --- */
+.hero {
+    /* Cambiamos el nombre de la ruta a image1.jpg */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('../imagenes/image1.jpg'); 
+    color: var(--text-light);
+    height: 65vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #FF9800; /* Naranja para contraste */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background-color: #e68a00;
+    transform: scale(1.05);
+}
+
+/* --- TARJETAS DE INFORMACIÓN --- */
+.info-rapida, .servicios-header, .lista-servicios {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards-container, .lista-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Para que se adapte a pantallas más pequeñas */
+}
+
+.card, .servicio-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.card:hover, .servicio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card h3, .servicio-item h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* ==========================================
+CORRECCIÓN DE TARJETAS EN EL INICIO
+   ========================================== */
+
+/* 1. Forzamos a que el contenedor alinee todo por igual */
+.cards-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto 60px auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; /* Evita que las tarjetas se estiren infinitamente hacia abajo */
+}
+
+/* 2. Definimos el tamaño exacto y fijo del contenedor de la foto */
+.card-img-wrapper {
+    width: 100%;
+    height: 200px; /* Altura fija ideal para que se vea como tarjeta profesional */
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+/* 3. Aseguramos que la imagen se adapte sin deformarse */
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la foto proporcionalmente para que no se deforme */
+    display: block;
+}
