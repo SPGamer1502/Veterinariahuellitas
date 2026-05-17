@@ -77,3 +77,16 @@ footer {
         padding: 6px 8px;
     }
 }
+/* Alinea el texto del logo con el nuevo icono SVG */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacio perfecto entre la huella y el texto */
+}
+
+/* Controla el tamaño y fuerza a que el icono use el mismo color verde del texto */
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Esto hace que el SVG adopte el color verde de tu clase .logo automáticamente */
+}
