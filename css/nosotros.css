@@ -1,0 +1,118 @@
+/* --- Estilos de Nosotros --- */
+.nosotros-section {
+    padding: 60px 20px;
+    max-width: 1100px; /* Ampliado un poco para que entren bien las 4 tarjetas */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nosotros-section h1 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.intro {
+    font-size: 1.15rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+}
+
+/* ==========================================
+   NUEVA SECCIÓN DE EQUIPO (IMAGEN AL COSTADO)
+   ========================================== */
+
+.equipo-titulo-secundario {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin: 40px 0 30px 0;
+    text-align: center;
+    font-weight: 600;
+}
+
+.equipo-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 850px; /* Ancho ideal para lectura horizontal */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Contenedor de la fila (Imagen + Info) */
+.equipo-item {
+    background: white;
+    display: flex;
+    align-items: center; /* Centra verticalmente la imagen con el texto */
+    gap: 30px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.equipo-item:hover {
+    transform: translateX(5px); /* Desplazamiento sutil hacia la derecha al pasar el mouse */
+    box-shadow: 0 6px 16px rgba(46, 139, 87, 0.12);
+}
+
+/* Caja de la foto fija */
+.equipo-img-box {
+    width: 160px;
+    height: 160px;
+    flex-shrink: 0; /* Evita que la imagen se achique si hay mucho texto */
+    border-radius: 50%; /* Foto en círculo para un estilo moderno médico */
+    overflow: hidden;
+    border: 3px solid var(--primary-color);
+    background-color: #f0f0f0;
+}
+
+.equipo-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Bloque de texto a la derecha */
+.equipo-info {
+    text-align: left; /* Alineado a la izquierda */
+}
+
+.equipo-info h3 {
+    color: var(--text-dark);
+    font-size: 1.4rem;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+/* Rol en verde llamativo */
+.equipo-rol {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.equipo-info p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Adaptación para pantallas de celulares */
+@media (max-width: 600px) {
+    .equipo-item {
+        flex-direction: column; /* Si la pantalla es chica, la foto se va arriba y el texto abajo */
+        text-align: center;
+        gap: 15px;
+    }
+    .equipo-info {
+        text-align: center;
+    }
+}
