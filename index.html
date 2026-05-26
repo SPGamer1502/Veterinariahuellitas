@@ -36,16 +36,57 @@
     </nav>
 
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Cuidamos a tu mejor amigo</h1>
-                <p>Atención médica de calidad, emergencias y mucho amor para tus mascotas.</p>
-                <a href="contacto.html" class="btn">Reserva una cita</a>
+        <div id="carouselVeterinaria" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselVeterinaria" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselVeterinaria" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselVeterinaria" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </section>
+
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="imagenes/image1.jpg" class="d-block w-100" alt="Cuidamos a tu mascota">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4 fw-bold text-white">Cuidamos a tu mejor amigo</h1>
+                        <p class="lead text-white d-none d-md-block">Atención médica de calidad, emergencias y mucho amor para tus mascotas.</p>
+                        <a href="contacto.html" class="btn btn-carrusel-1 mt-3">Reserva una cita</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="imagenes/Consulta.jpg" class="d-block w-100" alt="Nuestros Servicios">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4 fw-bold text-white">Servicios Especializados</h1>
+                        <p class="lead text-white d-none d-md-block">Contamos con quirófano equipado, vacunas y campañas de desparasitación.</p>
+                        <a href="servicios.html" class="btn btn-carrusel-2 mt-3">Ver Servicios</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="imagenes/baño.jpg" class="d-block w-100" alt="Grooming Veterinaria">
+                    <div class="carousel-caption text-center">
+                        <h1 class="display-4 fw-bold text-white">Estética y Grooming</h1>
+                        <p class="lead text-white d-none d-md-block">Baños medicados, cortes de raza y cuidado integral para el engreído de la casa.</p>
+                        <a href="https://wa.me/51984744905" target="_blank" class="btn btn-carrusel-3 mt-3">💬 Escríbenos</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselVeterinaria" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselVeterinaria" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
 
         <section class="info-rapida">
-            <h2 style="text-align: center; margin-top: 40px; color: #2E8B57;">¿Por qué elegirnos?</h2>
+            <h2 class="equipo-titulo-secundario">¿Por qué elegirnos?</h2>
             <div class="cards-container">
                 
                 <div class="card">
